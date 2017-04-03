@@ -10,6 +10,10 @@
 <!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
 <!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/acciones.js"></script>
@@ -39,24 +43,40 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body onLoad="MM_preloadImages('imagenes/muestra2.jpg')">
+<body onLoad="MM_preloadImages('imagenes/clasificacion2.jpg')">
 
 <div data-role="page" id="Principal" data-theme="a">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
 <h1>Telefonía Celular</h1>
 </div>
 
-<div data-role="main" class="ui-content">
-<div data-role="collapsible" data-content-theme="false">
-<h1>Foto de muestra</h1>
-<div>
-<p>Teléfono celular: </p>
-<br>
-</div>
-<div>
-<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen1','','imagenes/muestra2.jpg',1)"><img src="imagenes/muestra1.png" width="607" height="415" id="Imagen1"></a></div>
-</div>
-</div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/celular1.png" alt="celular1" title="celular1" id="wows1_0"/></li>
+		<li><img src="data1/images/celular2.png" alt="celular2" title="celular2" id="wows1_1"/></li>
+		<li><img src="data1/images/clasificacion1.jpg" alt="clasificacion1" title="clasificacion1" id="wows1_2"/></li>
+		<li><img src="data1/images/clasificacion2.jpg" alt="clasificacion2" title="clasificacion2" id="wows1_3"/></li>
+		<li><img src="data1/images/companias1.png" alt="companias1" title="companias1" id="wows1_4"/></li>
+		<li><img src="data1/images/companias2.png" alt="companias2" title="companias2" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/companias3.png" alt="slider" title="companias3" id="wows1_6"/></a></li>
+		<li><img src="data1/images/futuro1.jpg" alt="futuro1" title="futuro1" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="celular1"><span><img src="data1/tooltips/celular1.png" alt="celular1"/>1</span></a>
+		<a href="#" title="celular2"><span><img src="data1/tooltips/celular2.png" alt="celular2"/>2</span></a>
+		<a href="#" title="clasificacion1"><span><img src="data1/tooltips/clasificacion1.jpg" alt="clasificacion1"/>3</span></a>
+		<a href="#" title="clasificacion2"><span><img src="data1/tooltips/clasificacion2.jpg" alt="clasificacion2"/>4</span></a>
+		<a href="#" title="companias1"><span><img src="data1/tooltips/companias1.png" alt="companias1"/>5</span></a>
+		<a href="#" title="companias2"><span><img src="data1/tooltips/companias2.png" alt="companias2"/>6</span></a>
+		<a href="#" title="companias3"><span><img src="data1/tooltips/companias3.png" alt="companias3"/>7</span></a>
+		<a href="#" title="futuro1"><span><img src="data1/tooltips/futuro1.jpg" alt="futuro1"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
 
 <div>
 <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
@@ -213,21 +233,9 @@ En esta generación se abandona el uso de ondas de radio y se da paso a la era d
 <br>
 </div>
 <div>
-<img src="imagenes/clasificacion1.jpg" width="50%" height="50%"> </div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/clasificacion2.jpg',1)"><img src="imagenes/clasificacion1.jpg" width="50%" height="50%" id="Image28"></a> </div>
 </div>
-</div>
-
-<div data-role="main" class="ui-content">
-<div data-role="collapsible" data-content-theme="false">
-<h1>Foto de muestra</h1>
-<div>
-<p>Clasificación: </p>
-<br>
-</div>
-<div>
-<img src="imagenes/clasificacion2.jpg" width="50%" height="50%"> </div>
-</div>
-</div>    
+</div> 
 
 <div data-role="content" >
 <div>
@@ -286,17 +294,17 @@ En esta generación se abandona el uso de ondas de radio y se da paso a la era d
 
 <div data-role="content" >
 <div>
-<h1>Telcel</h1>
+<h1><a href="http://www.telcel.com/" target="_self">Telcel</a></h1>
 <h2>Telcel forma parte del grupo América Móvil, el mayor proveedor de comunicación celular en Latinoamérica y el tercer lugar a nivel mundial. Cuenta con más de 328 millones de clientes y está presente en 18 países de América. Tan sólo en nuestro continente, América Móvil cuenta con mas de 30 millones de líneas fijas y 262.9 millones de suscriptores móviles.
 
 Con 24 años de experiencia, cobertura en más de 200 mil poblaciones y una comunidad de mas de 70 millones de usuarios, Telcel es la empresa líder de telecomunicaciones inalámbricas en México, la compañía de teléfonos celulares de mayor confianza en México y la segunda marca más valiosa de Latinoamérica.
 
 En 1981 Inician la instalación y operación de un sistema de radiotelefonía móvil (teléfono en el automóvil) en el Distrito Federal.</h2>
 
-<h1>Movistar</h1>
+<h1><a href="http://www.movistar.com.mx/" target="_self">Movistar</a></h1>
 <h2>La entrada de Telefónica en México se hizo visible luego de adquirir cuatro operadoras en el norte del país (en el año 2001) y posteriormente a la operadora mexicana Pegaso (en el 2002). Tras la integración de estas empresas, se formó Telefónica México y la marca Telefónica MoviStar (en el 2003), hasta que en abril de 2005 se lanzó la nueva imagen de movistar, misma que está presente en 13 países.</h2>
 
-<h1>Unefon</h1>
+<h1><a href="https://www.unefon.com.mx/" target="_self">Unefon</a></h1>
 <h2>Unefón es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago. Fue fundada por Ricardo Salinas Pliego en 1998 y perteneció a Grupo Salinas desde su fundación hasta 2014, cuando la marca fue adquirida por AT&T.1 Alcanzó más de 2.5 millones de suscriptores en el año 2006.[cita requerida]
 
 </h2>

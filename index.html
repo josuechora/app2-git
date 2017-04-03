@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema1-app2.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/muestra2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonía Celular</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Imagen1','','imagenes/muestra2.jpg',1)"><img src="imagenes/muestra1.png" width="607" height="415" id="Imagen1"></a></div>
+</div>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es un teléfono celular?</h2>
+<p>Se muestra información sobre que es un teléfono celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonía celular</h2>
+<p>Se muestra la historia de la telefonía celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificación de la telefonía celular</h2>
+<p>Se muestra la clasificación sobre la telefonía celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que manejan la telefonía celular en Mexico</h2>
+<p>Se muestra que compañias de telefonía celular trabajan en Mexico</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Teléfonos celulares del futuro</h2>
+<p>Se muestran los posibles celulares que pueden llegar en futuro </p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4> Aplicación Dos </h4>
+<h4>Josué Chora Martínez</h4
+></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>¿QUE ES UN TELEFONO CELULAR?</h1>
+
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/celular1.png" width="50%" height="50%"></div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>foto de muestra</h1>
+<div>
+<p>Teléfono celular: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/celular2.png" width="50%" height="50%"></div>
+</div>
+</div>
+
+
+<div data-role="content">
+<div>
+<h2>Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar.</h2>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>HISTORIA DE LA TELEFONÍA CELULAR</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Historia: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/historia1.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Historia: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/historia2.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+
+
+<div data-role="content" >
+<div>
+<h2>La historia de la telefonía celular esta estrechamente ligada al desarrollo y evolución de la radio, los primeros teléfonos móviles eran demasiado grandes y pesados, por lo que su uso se restringió en principio a los autos. Generalmente el aparato se instalaba en la cabina y en el baúl se ponía un equipo de radio. El servicio no fue muy popular debido a su alto costo.</h2>
+
+<h1>Historia y desarrollo de los móviles, clasificación generaciones:</h1>
+
+<h2>Primera generación 1G</h2>
+<h2>El primer teléfono móvil fue el NMT 450 (Nordic Mobile Telephony 450 MHz), desarrollado por Ericsson, este aparato ,todavía usaba las señales de radio con modulación de frecuencia.</h2>
+
+<h2>Segunda Generación 2G</h2>
+<h2>La segunda generación nace a principios de los años 90s, utiliza sistemas GSM, IS-136, iDEN e IS-95 con frecuencias de 900 y 1800 MHz.
+
+En esta generación se abandona el uso de ondas de radio y se da paso a la era digital de las comunicaciones. Esto ofrece grandes ventajas como la calidad de voz, mejora en la seguridad y bajos costos de operación.</h2>
+
+<h2>Tercera generación 3G</h2>
+<h2>La tercera generación se caracteriza por ampliar características como ancho de banda y manejo de datos y ofrecer nuevos servicios como la teleconferencia, televisión , acceso pleno a internet y descarga de archivos.</h2>
+
+<h2>Cuarta Generación 4G: El futuro</h2>
+<h2>La generación 4, o 4G será la evolución tecnológica que ofrecerá al usuario de telefonía móvil un mayor ancho de banda que permitirá, entre muchas otras cosas, la recepción de televisión en Alta Definición</h2></div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>CLASIFICACIÓN DE LA TELEFONÍA CELULAR</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/clasificacion1.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/clasificacion2.jpg" width="50%" height="50%"> </div>
+</div>
+</div>    
+
+<div data-role="content" >
+<div>
+<h1>Lo celulares estan clasificados bajo las siguientes clases:</h1>
+
+<h2>Gama baja: bajo este nombre se identifican a aquellos teléfonos móviles que cuentan si bien cuentan con una cámara de fotos, esta es de baja calidad. Además de esto, incluyen un reproductor de música aunque de los más básicos, al igual que la memoria que presentan, que es bastante limitada. Los celulares de baja gama tampoco incluyen pantalla táctil y ésta suele ser de tamaño reducido. La conexión a Internet que ofrecen es bastante limitada y no cuentan con 3G.</h2>
+
+<h2>Gama media: estos celulares, en cambio, ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios. Además de esto, la cámara de fotos que tienen es de mayor calidad, al igual que los reproductores de MP3. Estos teléfonos móviles también ofrecen juegos, mensaje de texto, calculadora y distintas aplicaciones.</h2>
+
+<h2>Gama alta: los teléfonos móviles de alta gama ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.</h2>
+</div></div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>COMPAÑIAS QUE MANEJAN LA TELEFONÍA CELULAR EN MEXICO</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div>
+<img src="imagenes/companias1.png" width="50%" height="50%"> </div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div><img src="imagenes/companias2.png" width="50%" height="50%"></div>
+</div>
+</div> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div><img src="imagenes/companias3.png" width="50%" height="50%"></div>
+</div>
+</div>      
+
+<div data-role="content" >
+<div>
+<h1>Telcel</h1>
+<h2>Telcel forma parte del grupo América Móvil, el mayor proveedor de comunicación celular en Latinoamérica y el tercer lugar a nivel mundial. Cuenta con más de 328 millones de clientes y está presente en 18 países de América. Tan sólo en nuestro continente, América Móvil cuenta con mas de 30 millones de líneas fijas y 262.9 millones de suscriptores móviles.
+
+Con 24 años de experiencia, cobertura en más de 200 mil poblaciones y una comunidad de mas de 70 millones de usuarios, Telcel es la empresa líder de telecomunicaciones inalámbricas en México, la compañía de teléfonos celulares de mayor confianza en México y la segunda marca más valiosa de Latinoamérica.
+
+En 1981 Inician la instalación y operación de un sistema de radiotelefonía móvil (teléfono en el automóvil) en el Distrito Federal.</h2>
+
+<h1>Movistar</h1>
+<h2>La entrada de Telefónica en México se hizo visible luego de adquirir cuatro operadoras en el norte del país (en el año 2001) y posteriormente a la operadora mexicana Pegaso (en el 2002). Tras la integración de estas empresas, se formó Telefónica México y la marca Telefónica MoviStar (en el 2003), hasta que en abril de 2005 se lanzó la nueva imagen de movistar, misma que está presente en 13 países.</h2>
+
+<h1>Unefon</h1>
+<h2>Unefón es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago. Fue fundada por Ricardo Salinas Pliego en 1998 y perteneció a Grupo Salinas desde su fundación hasta 2014, cuando la marca fue adquirida por AT&T.1 Alcanzó más de 2.5 millones de suscriptores en el año 2006.[cita requerida]
+
+</h2>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Telefonos celulares del futuro</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div><img src="imagenes/futuro1.jpg" width="50%" height="50%"></div>
+</div>
+</div> 
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div>
+<p>Clasificación: </p>
+<br>
+</div>
+<div><img src="imagenes/futuro2.jpg" width="50%" height="50%"></div>
+</div>
+</div> 
+
+<div data-role="content">
+<div>
+<h1>Cracteristicas</h1>
+<h2>Pantallas flexibles</h2>
+<h2>Por el momento podríamos soñar con smartphones cilíndricos cuya pantalla pudiera desplegarse como un rollo en caso de necesitarlo</h2>
+
+<h2>Nuevas formas de autenticación</h2>
+<h2>Códigos PIN, contraseñas, patrones de desbloqueo, sensores de huellas abajo, detrás o al lado. Estos son los métodos más comunes para autenticarnos en nuestro equipo</h2>
+
+<h2>Baterías más duraderas</h2>
+<h2>El desarrollo tanto de la carga rápida inalámbrica como por los conectores USB tipo C permitirá que duremos menos tiempo pegados a la pared, a la hora de cargar los celulares del futuro</h2>
+
+<h2>Sensores 3D</h2>
+<h2>Project Tango es uno de los proyectos alternativos de Google. Por el momento consiste en una tableta que tiene varias cámaras que le permiten analizar y entender su entorno</h2>
+
+<h2>Nuevos materiales</h2>
+<h2>El grafeno parece ser el próximo material a utilizar en el ámbito de la electrónica de consumo. Desde la fabricación de baterías, que permiten una carga más rápida y mayor concentración de energía por kilogramo, hasta pantallas más resistentes, flexibles y prácticamente irrompibles</h2></div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, JCM</h4>
+</div>
+</div>
+
+
+
+</body>
+</html>
